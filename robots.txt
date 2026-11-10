@@ -4,4 +4,4 @@ Disallow: /tech/
 Disallow: /dispatch/
 Disallow: /owner/
 Disallow: /django-admin/
-Sitemap: https://www.airconditioningplusllc.com/sitemap.xml
+Sitemap: https://airconditioningplusllc.com/sitemap.xml

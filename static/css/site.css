@@ -366,3 +366,11 @@ body.heat .nav.stuck:before{background:rgba(13,9,7,.88)}
 .cp-card h3{font-size:22px;margin:0}.cp-card p{margin:-6px 0 4px}
 .cp-card .btn{justify-content:center;padding:16px 14px;font-size:19px;font-weight:700}
 @media(min-width:700px){.callpick{align-items:center}.cp-card{border-radius:22px;margin:0 16px}}
+
+/* two-line wordmark: Air Conditioning Plus / Cooling and Heating LLC */
+.logo-txt{display:flex;flex-direction:column;gap:5px;line-height:1}
+.logo-txt small{font-size:12px;font-weight:600;letter-spacing:.01em;color:var(--mut,#9fb0c8);line-height:1;white-space:nowrap}
+.foot .logo-txt small{font-size:13px}
+@media(max-width:420px){.logo-txt small{font-size:10.5px}}
+.logo-main{display:block;white-space:nowrap}
+.logo-txt,.logo-txt *{white-space:nowrap}

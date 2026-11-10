@@ -71,3 +71,11 @@ document.addEventListener('click',e=>{
 });
 document.addEventListener('keydown',e=>{if(e.key==='Escape')document.querySelectorAll('.lb').forEach(l=>l.remove());
   if((e.key==='Enter'||e.key===' ')&&e.target.classList&&e.target.classList.contains('shot')){e.preventDefault();e.target.click()}});
+
+/* "Call now" with two numbers: open a small picker instead of dialling only the first one. */
+document.addEventListener('click',e=>{
+  const p=document.getElementById('callpick');if(!p)return;
+  if(e.target.closest('[data-callpick]')){e.preventDefault();p.hidden=false;const a=p.querySelector('a');a&&a.focus();return}
+  if(!p.hidden&&(e.target===p||e.target.closest('.cp-x')||e.target.closest('.cp-card a')))p.hidden=true;
+});
+document.addEventListener('keydown',e=>{if(e.key==='Escape'){const p=document.getElementById('callpick');if(p)p.hidden=true}});
